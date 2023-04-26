@@ -10,18 +10,16 @@ const NewListings = () => {
     { photo: houses, price: "$196,910" },
   ];
   return (
-    <div>
+    <div className="mx-8 overflow-hidden">
       {/* Title */}
-      <div className="mx-8 mt-10  ">
-        <p className="text-[18.5px] font-medium ">
-          New Listings in Spokeane, WA
-        </p>
+      <div className="mt-10  ">
+        <p className="text-[18.5px] font-medium ">Homes we got for you</p>
         <p className="text-blue-600 text-[15px]">View All 160 New Listings</p>
       </div>
       {/* Listings */}
-      <div className="">
+      <div className=" flex flex-nowrap pt-4 space-x-6 w-full overflow-x-scroll pb-4 mb-20 ">
         {cards.map((card) => (
-          <CardComponent />
+          <CardComponent photo={card.photo} price={card.price} />
         ))}
       </div>
     </div>

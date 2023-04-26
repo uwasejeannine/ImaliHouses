@@ -1,21 +1,16 @@
-import Hero from "./components/Hero";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import NewListings from "./components/NewListings";
-
+import Footer from "./components/Footer";
+import CardsHomes from "./components/CardsHomes";
 function App() {
   return (
     <div className="  ">
-      {/* Navbar */}
       <Navbar />
-      {/* Hero */}
-      <Hero />
-
-      {/* New Listings */}
+      <Home />
       <NewListings />
-      {/* Take Action */}
-      {/* Stickers */}
-      {/* Related */}
-      {/* Footer */}
+      <CardsHomes />
+      <Footer />
     </div>
   );
 }
